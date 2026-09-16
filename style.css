@@ -247,6 +247,12 @@ main {
 
 .testimonial:last-child { margin-bottom: 0; }
 
+.closing-mark {
+  width: 64px;
+  height: auto;
+  display: inline-block;
+}
+
 .page-header {
   text-align: center;
   padding-top: 1rem;
