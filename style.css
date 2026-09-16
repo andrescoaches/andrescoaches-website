@@ -270,6 +270,65 @@ main {
 
 .page-header .back-link:hover { text-decoration: underline; }
 
+.page-header .byline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-list li {
+  padding-left: 1.4rem;
+  border-left: 2px solid var(--rule);
+  margin-bottom: 1.25rem;
+}
+
+.blog-list a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.blog-list a:hover { text-decoration: underline; }
+
+.blog-list .date {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 0.2em;
+}
+
+.blog-post figure {
+  margin: 1.75rem 0;
+}
+
+.blog-post figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  filter: grayscale(100%);
+}
+
+.blog-post .caption {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: -1.25rem;
+}
+
+.blog-post blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--muted);
+}
+
+.blog-post blockquote p { margin: 0; }
+
 .site-footer {
   max-width: 640px;
   margin: 0 auto;
