@@ -58,7 +58,7 @@ li { margin-bottom: 0.6em; }
 }
 
 .wordmark .logo {
-  width: 28px;
+  width: 56px;
   height: auto;
   display: block;
 }
@@ -96,8 +96,10 @@ main {
 }
 
 .headshot {
-  width: 190px;
-  height: 190px;
+  width: 380px;
+  height: 380px;
+  max-width: 90vw;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 6px;
   margin: 1.5rem 0;
@@ -109,12 +111,6 @@ main {
   font-style: italic;
   max-width: 480px;
   margin: 0 auto 0.75em;
-}
-
-.lede-sub {
-  color: var(--muted);
-  max-width: 480px;
-  margin: 0 auto 1.75em;
 }
 
 .btn {
