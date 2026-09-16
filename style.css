@@ -310,7 +310,11 @@ main {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  filter: grayscale(100%);
+}
+
+.blog-post figure.closing-figure img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .blog-post .caption {
