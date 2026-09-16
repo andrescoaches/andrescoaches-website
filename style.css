@@ -248,7 +248,8 @@ main {
 .testimonial:last-child { margin-bottom: 0; }
 
 .closing-mark {
-  width: 64px;
+  width: 380px;
+  max-width: 90vw;
   height: auto;
   display: inline-block;
 }
