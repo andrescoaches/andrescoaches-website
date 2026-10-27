@@ -229,24 +229,6 @@ main {
   margin: 0.6rem 0 0;
 }
 
-.testimonial {
-  border-left: 3px solid var(--accent);
-  padding-left: 1.25rem;
-  margin: 0 0 1.75rem;
-}
-
-.testimonial p {
-  color: var(--muted);
-  margin: 0;
-}
-
-.testimonial strong {
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.testimonial:last-child { margin-bottom: 0; }
-
 .closing-mark {
   width: 380px;
   max-width: 90vw;
