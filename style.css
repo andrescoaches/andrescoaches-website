@@ -240,33 +240,54 @@ main {
   margin: 0 0 1em;
 }
 
-.testimonial summary {
-  cursor: pointer;
-  font-weight: 700;
-  list-style: none;
-  margin: 0 0 1em;
+.testimonial {
+  position: relative;
 }
 
-.testimonial summary::-webkit-details-marker {
+.testimonial .toggle {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.testimonial .rest {
   display: none;
 }
 
-.testimonial summary::after {
+.testimonial .toggle:checked ~ .rest {
+  display: block;
+}
+
+.testimonial .toggle-label {
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 0 1em;
+}
+
+.testimonial .toggle-label::after {
   content: " +";
   font-weight: 400;
   color: var(--muted);
 }
 
-.testimonial details[open] summary::after {
+.testimonial .toggle:checked ~ .toggle-label::after {
   content: " \2212";
 }
 
+.testimonial .toggle:focus-visible ~ .toggle-label {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
 .testimonial .less,
-.testimonial details[open] .more {
+.testimonial .toggle:checked ~ .toggle-label .more {
   display: none;
 }
 
-.testimonial details[open] .less {
+.testimonial .toggle:checked ~ .toggle-label .less {
   display: inline;
 }
 
