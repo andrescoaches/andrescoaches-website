@@ -240,6 +240,36 @@ main {
   margin: 0 0 1em;
 }
 
+.testimonial summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+  margin: 0 0 1em;
+}
+
+.testimonial summary::-webkit-details-marker {
+  display: none;
+}
+
+.testimonial summary::after {
+  content: " +";
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.testimonial details[open] summary::after {
+  content: " \2212";
+}
+
+.testimonial .less,
+.testimonial details[open] .more {
+  display: none;
+}
+
+.testimonial details[open] .less {
+  display: inline;
+}
+
 .testimonial .attribution {
   color: var(--ink);
   font-weight: 700;
